@@ -1,12 +1,15 @@
-import React from 'react';
-import classes from './App.css';
-
-function App() {
-  return (
-    <div >
-      <h1 className={classes.App}>Hello some thing working </h1>
-    </div>
-  );
+import React ,{Component} from 'react';
+import Layout from './components/Layout/Layout';
+import BurgerBuilder from './containers/BurgerBuilder/BurderBuilder';
+class App extends Component{
+  render(){
+    return (
+      <div>
+        <Layout>
+          <BurgerBuilder />
+        </Layout>
+      </div>
+    );
+  }
 }
-
 export default App;
