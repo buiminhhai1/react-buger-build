@@ -29,13 +29,18 @@ class Orders extends Component {
     }
 
     render(){
-        const tempOrder = this.state.orders.map(order => (
-            <Order 
-            key={order.id}
-            ingredients={order.ingredients}
-            price={+order.price}/>));
+        let tempOrder;
+        if(this.state.loading){
+            tempOrder = <Spinner/>
+        } else {
+            tempOrder = this.state.orders.map(order => (
+                <Order 
+                key={order.id}
+                ingredients={order.ingredients}
+                price={+order.price}/>));
+        } 
         return(<div>
-            {this.state.orders ? tempOrder : <Spinner/>}
+            {tempOrder}
         </div>);
     }
 }
