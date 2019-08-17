@@ -5,6 +5,7 @@ const initialState = {
     ingredients: null,
     totalPrice: 4,
     error: false,
+    initloading: false
 }
 
 const INGREDIENT_PRICES = {
@@ -34,6 +35,10 @@ const removeIngredient = (state, action) => {
     return updateObject(state,updatedState);
 }
 
+const initIngredientsStart = (state, action) => {
+    return updateObject(state, {initloading: true});
+}
+
 const setIngredients = (state, action) => {
     return updateObject(state, {
         ingredients: {
@@ -43,12 +48,13 @@ const setIngredients = (state, action) => {
             meat: action.ingredients.meat
         },
         totalPrice: 4,
-        error: false
+        error: false,
+        initloading: false
     });
 };
 
 const fetchIngredientsFailed = (state, action) => {
-    return updateObject(state, {error: true});
+    return updateObject(state, {error: true, initloading: false});
 }
 
 const reducer = (state = initialState, action) => {
@@ -56,6 +62,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.ADD_INGREDIENT: return addIngredient(state, action);
         case actionTypes.REMOVE_INGREDIENT: return removeIngredient(state, action);
         case actionTypes.SET_INGREDIENTS: return setIngredients(state, action);
+        case actionTypes.INIT_INGREDIENTS_START: return initIngredientsStart(state, action);
         case actionTypes.FETCH_INGREDIENTS_FAILED: return fetchIngredientsFailed(state, action);
         default: break;
     }
