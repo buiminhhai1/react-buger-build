@@ -7,7 +7,7 @@ import Checkout from './containers/Checkout/Checkout';
 import AsyncComponent from './hoc/AsyncComponent/AsyncComponent';
 
 const asyncComponent = AsyncComponent(()=>{
-  return import('./containers/Checkout/Orders/Orders');
+  return import('./containers/Orders/Orders');
 })
 
 class App extends Component{
