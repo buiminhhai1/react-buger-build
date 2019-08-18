@@ -4,15 +4,21 @@ import {connect} from 'react-redux';
 
 import Layout from './hoc/Layout/Layout';
 import BurgerBuilder from './containers/BurgerBuilder/BurderBuilder';
-import Checkout from './containers/Checkout/Checkout';
 import AsyncComponent from './hoc/AsyncComponent/AsyncComponent';
-import Auth from './containers/Auth/Auth';
 import Logout from './containers/Auth/Logout/Logout';
 import * as actions  from './store/actions/index';
 
-const asyncComponent = AsyncComponent(()=>{
+const asyncOrders = AsyncComponent(()=>{
   return import('./containers/Orders/Orders');
 })
+
+const asyncCheckout = AsyncComponent(() => {
+  return import('./containers/Checkout/Checkout');
+});
+
+const asyncAuth = AsyncComponent(() => {
+  return import('./containers/Auth/Auth');
+});
 
 class App extends Component{
   componentDidMount() {
@@ -22,7 +28,7 @@ class App extends Component{
   render(){
     let routes = (
       <Switch>
-        <Route path="/auth" component={Auth} />
+        <Route path="/auth" component={asyncAuth} />
         <Route path="/" exact component={BurgerBuilder} />
         <Redirect to="/" />
       </Switch>
@@ -31,9 +37,9 @@ class App extends Component{
     if(this.props.isAuthenticated){
       routes = (
         <Switch>
-          <Route path="/checkout" component={Checkout} />
-          <Route path="/orders" component={asyncComponent} />
-          <Route path="/auth" component={Auth} />
+          <Route path="/checkout" component={asyncCheckout} />
+          <Route path="/orders" component={asyncOrders} />
+          <Route path="/auth" component={asyncAuth} />
           <Route path="/logout" component={Logout} />
           <Route path="/" exact component={BurgerBuilder} />
           <Redirect to="/" />
