@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## You can view app in this link:
+https://minhhai-react-burger.herokuapp.com/
 
+## You can create new user or use my user: 
+ email: test@test.com 
+ pass: 123456
 ## Available Scripts
 
 In the project directory, you can run:
