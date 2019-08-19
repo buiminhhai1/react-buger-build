@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![alt text](https://github.com/buiminhhai1/react-buger-build/blob/manage_state_with_redux/index.PNG)
 ## You can view app in this link:
 https://minhhai-react-burger.herokuapp.com/
 
