@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-buger-build/static/css/main.0fbf7eba.chunk.css",
+    "main.js": "/react-buger-build/static/js/main.b455f675.chunk.js",
+    "main.js.map": "/react-buger-build/static/js/main.b455f675.chunk.js.map",
+    "runtime-main.js": "/react-buger-build/static/js/runtime-main.708e268c.js",
+    "runtime-main.js.map": "/react-buger-build/static/js/runtime-main.708e268c.js.map",
+    "static/js/2.1738fabe.chunk.js": "/react-buger-build/static/js/2.1738fabe.chunk.js",
+    "static/js/2.1738fabe.chunk.js.map": "/react-buger-build/static/js/2.1738fabe.chunk.js.map",
+    "static/css/3.e933fb1d.chunk.css": "/react-buger-build/static/css/3.e933fb1d.chunk.css",
+    "static/js/3.7fbb8ae3.chunk.js": "/react-buger-build/static/js/3.7fbb8ae3.chunk.js",
+    "static/js/3.7fbb8ae3.chunk.js.map": "/react-buger-build/static/js/3.7fbb8ae3.chunk.js.map",
+    "static/css/4.26df5a61.chunk.css": "/react-buger-build/static/css/4.26df5a61.chunk.css",
+    "static/js/4.6cb4fe79.chunk.js": "/react-buger-build/static/js/4.6cb4fe79.chunk.js",
+    "static/js/4.6cb4fe79.chunk.js.map": "/react-buger-build/static/js/4.6cb4fe79.chunk.js.map",
+    "static/css/5.ba53f5aa.chunk.css": "/react-buger-build/static/css/5.ba53f5aa.chunk.css",
+    "static/js/5.a955096b.chunk.js": "/react-buger-build/static/js/5.a955096b.chunk.js",
+    "static/js/5.a955096b.chunk.js.map": "/react-buger-build/static/js/5.a955096b.chunk.js.map",
+    "index.html": "/react-buger-build/index.html",
+    "precache-manifest.75206740223771aff16fded2237ceb4d.js": "/react-buger-build/precache-manifest.75206740223771aff16fded2237ceb4d.js",
+    "service-worker.js": "/react-buger-build/service-worker.js",
+    "static/css/3.e933fb1d.chunk.css.map": "/react-buger-build/static/css/3.e933fb1d.chunk.css.map",
+    "static/css/4.26df5a61.chunk.css.map": "/react-buger-build/static/css/4.26df5a61.chunk.css.map",
+    "static/css/5.ba53f5aa.chunk.css.map": "/react-buger-build/static/css/5.ba53f5aa.chunk.css.map",
+    "static/css/main.0fbf7eba.chunk.css.map": "/react-buger-build/static/css/main.0fbf7eba.chunk.css.map",
+    "static/js/2.1738fabe.chunk.js.LICENSE.txt": "/react-buger-build/static/js/2.1738fabe.chunk.js.LICENSE.txt",
+    "static/media/burger-logo.png": "/react-buger-build/static/media/burger-logo.b8503d26.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.708e268c.js",
+    "static/js/2.1738fabe.chunk.js",
+    "static/css/main.0fbf7eba.chunk.css",
+    "static/js/main.b455f675.chunk.js"
+  ]
+}
