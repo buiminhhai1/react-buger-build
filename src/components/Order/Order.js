@@ -2,8 +2,6 @@ import React from 'react';
 import classes from './Order.module.css';
 
 const Order = (props) => {
-    console.log("ORder.js test props");
-    console.log(props);
     const ingredients = [];
     for(let ingredientName in props.ingredients){
         ingredients.push({
@@ -24,8 +22,6 @@ const Order = (props) => {
     return (
     <div className={classes.Order}>
         <p>Ingredients: {ingredientOutput} </p>
-        
-     
         <p>Price: <strong>USD {props.price.toFixed(2)}</strong></p>
     </div>);
     };
